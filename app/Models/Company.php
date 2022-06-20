@@ -13,6 +13,7 @@ class Company extends Model
     //protected $guarded = [];
     protected $fillable = ['name', 'address', 'website', 'email'];
 
+    // has many contacts
     public function contacts(){
         return $this->hasMany(Contact::class);
     }
